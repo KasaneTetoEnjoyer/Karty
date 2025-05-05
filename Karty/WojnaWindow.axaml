@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Karty.WojnaWindow"
+      Title="Gra w Wojnę"
+        Width="400" Height="700">
+	<StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
+		<TextBlock Name="ResultText" FontSize="20" TextAlignment="Center"/>
+		<TextBlock Name="CardCountText" FontSize="16" TextAlignment="Center"/>
+
+		<Image Name="PlayerCardImage" Width="100" Height="130"/>
+		<Image Name="ComputerCardImage" Width="100" Height="130"/>
+
+		<Button Content="Rozegraj turę" Click="PlayTurn_Click" Width="120"/>
+	</StackPanel>
+</Window>

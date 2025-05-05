@@ -19,7 +19,7 @@ public partial class MainWindow : Window
 
     private void Wojna_Click(object? sender, RoutedEventArgs e)
     {
-        //new WojnaWindow().Show();
+        new WojnaWindow().Show();
     }
 
     private void Makao_Click(object? sender, RoutedEventArgs e)

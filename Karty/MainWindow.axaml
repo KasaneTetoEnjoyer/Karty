@@ -8,7 +8,7 @@
 	<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20">
 		<TextBlock Text="Wybierz grę:" FontSize="20" HorizontalAlignment="Center"/>
 		<Button Content="nwm" Width="200" Click="Pasjans_Click"/>
-		<Button Content="jakie gry" Width="200" Click="Wojna_Click"/>
-		<Button Content="wzielismy (wojna)" Width="200" Click="Makao_Click"/>
+		<Button Content="jakie gry (wojna)" Width="200" Click="Wojna_Click"/>
+		<Button Content="wzielismy" Width="200" Click="Makao_Click"/>
 	</StackPanel>
 </Window>
