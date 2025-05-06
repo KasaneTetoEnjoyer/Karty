@@ -16,7 +16,7 @@ namespace Karty
         private Queue<Card> computerDeck = new();
         private Random random = new();
         private int turnCount = 0;
-        private const int MaxTurns = 1000; // Safety limit
+        private const int MaxTurns = 1000; 
 
         public WojnaWindow()
         {
@@ -38,10 +38,10 @@ namespace Karty
         private void InitializeDecks()
         {
             List<Card> fullDeck = new();
-            // Standard 52-card deck but all using club images
-            foreach (int value in Enumerable.Range(2, 13)) // 2-14 (ace)
+            
+            foreach (int value in Enumerable.Range(2, 13)) 
             {
-                // Add each value 4 times (for 4 suits) but all using club images
+               
                 for (int i = 0; i < 4; i++)
                 {
                     fullDeck.Add(new Card(value));
@@ -127,7 +127,7 @@ namespace Karty
                         break;
                     }
 
-                    // Add one face-down card for war
+                    
                     warPile.Add(playerDeck.Dequeue());
                     warPile.Add(computerDeck.Dequeue());
                 }
