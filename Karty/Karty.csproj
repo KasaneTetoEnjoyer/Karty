@@ -61,6 +61,20 @@
     <None Remove="Assets\Cards\Spades_7.png" />
     <None Remove="Assets\Cards\Spades_8.png" />
     <None Remove="Assets\Cards\Spades_9.png" />
+    <None Remove="kartypng\10_of_clubs.png" />
+    <None Remove="kartypng\2_of_clubs.png" />
+    <None Remove="kartypng\3_of_clubs.png" />
+    <None Remove="kartypng\4_of_clubs.png" />
+    <None Remove="kartypng\6_of_clubs.png" />
+    <None Remove="kartypng\7_of_clubs.png" />
+    <None Remove="kartypng\8_of_clubs.png" />
+    <None Remove="kartypng\9_of_clubs.png" />
+    <None Remove="kartypng\ace_of_clubs.png" />
+    <None Remove="kartypng\black_joker.png" />
+    <None Remove="kartypng\jack_of_clubs.png" />
+    <None Remove="kartypng\king_of_clubs.png" />
+    <None Remove="kartypng\queen_of_clubs.png" />
+    <None Remove="traszka.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -233,6 +247,48 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Cards\Spades_9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\10_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\2_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\3_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\4_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\6_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\7_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\8_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\9_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\ace_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\black_joker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\jack_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\king_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\queen_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\traszka.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
