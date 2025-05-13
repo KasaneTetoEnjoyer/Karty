@@ -65,6 +65,7 @@
     <None Remove="kartypng\2_of_clubs.png" />
     <None Remove="kartypng\3_of_clubs.png" />
     <None Remove="kartypng\4_of_clubs.png" />
+    <None Remove="kartypng\5_of_clubs.png" />
     <None Remove="kartypng\6_of_clubs.png" />
     <None Remove="kartypng\7_of_clubs.png" />
     <None Remove="kartypng\8_of_clubs.png" />
@@ -259,6 +260,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="kartypng\4_of_clubs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kartypng\5_of_clubs.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="kartypng\6_of_clubs.png">
