@@ -11,10 +11,10 @@ public partial class MainWindow : Window
         InitializeComponent();
     }
 
-    private void Pasjans_Click(object? sender, RoutedEventArgs e)
+    private void HighorLow_Click(object? sender, RoutedEventArgs e)
     {
-
-        //new PasjansWindow().Show();
+        new HighorLow().Show();
+        
     }
 
     private void Wojna_Click(object? sender, RoutedEventArgs e)
