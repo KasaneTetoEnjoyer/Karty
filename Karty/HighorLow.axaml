@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Karty.HighorLow"
+        Title="Higher or Lower" Width="800" Height="600">
+
+	<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+		<TextBlock x:Name="ScoreText" FontSize="24" Text="Wynik: 0" HorizontalAlignment="Center"/>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+			<Image x:Name="CurrentCardImage" Width="150" Height="220"/>
+			<Image x:Name="DeckImage" Width="150" Height="220"/>
+		</StackPanel>
+
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+			<Button x:Name="HigherButton" Content="Higher" Width="100"/>
+			<Button x:Name="LowerButton" Content="Lower" Width="100"/>
+		</StackPanel>
+	</StackPanel>
+</Window>
+
