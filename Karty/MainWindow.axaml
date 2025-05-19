@@ -7,8 +7,8 @@
        Title="Wybierz grę karcianą" Width="400" Height="300">
 	<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="20">
 		<TextBlock Text="Wybierz grę:" FontSize="20" HorizontalAlignment="Center"/>
-		<Button Content="nwm" Width="200" Click="Pasjans_Click"/>
-		<Button Content="jakie gry (wojna)" Width="200" Click="Wojna_Click"/>
+		<Button Content="High or Low" Width="200" Click="HighorLow_Click"/>
+		<Button Content="Wojna" Width="200" Click="Wojna_Click"/>
 		<Button Content="wzielismy" Width="200" Click="Makao_Click"/>
 	</StackPanel>
 </Window>
