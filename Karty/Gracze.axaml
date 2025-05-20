@@ -4,7 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Karty.Gracze"
-        Title="Gracze" Background="DarkGreen">
+        Title="Gracze" Background="#2E8B57">
 
 	<StackPanel Margin="20" Spacing="10">
 		<TextBlock Text="Lista graczy:" FontWeight="Bold"/>
@@ -14,13 +14,13 @@
 		<Button Content="Ustaw jako aktywnego gracza"
                 Click="SetActivePlayer_Click"
                 HorizontalAlignment="Left"
-                Width="200"/>
+                Width="240"/>
 
 		<StackPanel Orientation="Horizontal" Spacing="10">
 			<TextBox x:Name="LoginTextBox" Width="200" Watermark="Login nowego gracza"/>
-			<Button Content="Dodaj" Width="100" Click="AddPlayer_Click"/>
+			<Button Content="Dodaj" Width="100" Click="AddPlayer_Click" Background="#8B0000" Foreground="White" FontSize="16" FontWeight="Bold" BorderBrush="Gold" BorderThickness="2" CornerRadius="8"/>
 		</StackPanel>
 
-		<Button Content="Zamknij" Click="Close_Click" HorizontalAlignment="Right"/>
+		<Button Content="Zamknij" Click="Close_Click" HorizontalAlignment="Right" Background="#8B0000" Foreground="White" FontSize="16" FontWeight="Bold" BorderBrush="Gold" BorderThickness="2" CornerRadius="8"/>
 	</StackPanel>
 </Window>

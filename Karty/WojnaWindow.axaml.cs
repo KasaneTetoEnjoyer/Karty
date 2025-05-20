@@ -73,17 +73,30 @@ namespace Karty
             turnCount++;
             if (turnCount >= MaxTurns)
             {
-                ResultText.Text = "Game too long! Declaring a draw.";
-                return;
-            }
+                ScoreHistory.AddScore(AppState.ActivePlayerLogin ?? "Nieznany", "Remis", "Wojna");
+                ShowMessage("REMIS");
+                Graj.IsEnabled = false;
 
-            if (playerDeck.Count == 0 || computerDeck.Count == 0)
+
+            }
+            if (playerDeck.Count == 0)
             {
-                ResultText.Text = playerDeck.Count == 0 ? "Przegrałeś grę!" : "Wygrałeś grę!";
-                return;
+                ShowMessage("PRZEGRANA");
+                ScoreHistory.AddScore(AppState.ActivePlayerLogin ?? "Nieznany", "Przegrana", "Wojna");
+                Graj.IsEnabled = false;
+
+
+            }
+            if (computerDeck.Count == 0)
+            {
+                ShowMessage("WYGRANA");
+
+                ScoreHistory.AddScore(AppState.ActivePlayerLogin ?? "Nieznany", "Wygrana", "Wojna");
+                Graj.IsEnabled = false;
+
             }
 
-            List<Card> warPile = new();
+                List<Card> warPile = new();
             bool resolved = false;
             int warDepth = 0;
             const int maxWarDepth = 3;
@@ -102,7 +115,7 @@ namespace Karty
 
                 if (playerCard.Value > computerCard.Value)
                 {
-                    ResultText.Text = warDepth == 0 ? "Wygrałeś turę!" : "Wygrałeś wojnę!";
+                    ResultText.Text = warDepth == 0 ? "Wygrałeś turę!" : "Wygrałeś wojnę!"  ;
                     Shuffle(warPile);
                     foreach (var c in warPile)
                         playerDeck.Enqueue(c);
@@ -163,7 +176,26 @@ namespace Karty
         {
             CardCountText.Text = $"Twoje karty: {playerDeck.Count}   Przeciwnik: {computerDeck.Count}";
         }
+        private void ShowMessage(string message)
+        {
+            var dialog = new Window
+            {
+                Title = "Info",
+                Width = 300,
+                Height = 100,
+                Content = new TextBlock
+                {
+                    Text = message,
+                    HorizontalAlignment = Avalonia.Layout.HorizontalAlignment.Center,
+                    VerticalAlignment = Avalonia.Layout.VerticalAlignment.Center
+                }
+            };
+
+            dialog.ShowDialog(this);
+        }
+
     }
+}
 
     public class Card
     {
@@ -180,4 +212,3 @@ namespace Karty
             _ => v.ToString()
         };
     }
-}

@@ -78,18 +78,21 @@ public partial class Gracze : Window
         {
             this.Close();
         }
-        private void SetActivePlayer_Click(object? sender, RoutedEventArgs e)
+    private void SetActivePlayer_Click(object? sender, RoutedEventArgs e)
+    {
+        if (PlayerListBox.SelectedIndex >= 0 && PlayerListBox.SelectedIndex < players.Count)
         {
-            if (PlayerListBox.SelectedIndex >= 0 && PlayerListBox.SelectedIndex < players.Count)
-            {
-                ShowMessage("Wybrano Gracza");
-            }
-            else
-            {
-                ShowMessage("Nie wybrano gracza.");
-            }
+            var selectedPlayer = players[PlayerListBox.SelectedIndex];
+            AppState.ActivePlayerLogin = selectedPlayer.Login;
+
+            ShowMessage($"Wybrano gracza: {selectedPlayer.Login}");
         }
-        private void ShowMessage(string message)
+        else
+        {
+            ShowMessage("Nie wybrano gracza.");
+        }
+    }
+    private void ShowMessage(string message)
         {
             var dialog = new Window
             {

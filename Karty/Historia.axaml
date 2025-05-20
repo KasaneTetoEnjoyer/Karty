@@ -4,7 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Karty.Historia"
-        Title="Historia">
+        Title="Historia" Background="#2E8B57">
 	<StackPanel Margin="20" Spacing="10">
 
 		<TextBlock Text="Tabela wyników:"
@@ -13,7 +13,7 @@
                    Foreground="White"/>
 
 		<ScrollViewer Height="300">
-			<TextBlock x:Name="ScoreTextBlock"
+			<TextBlock Name="ScoreTextBlock"
                        Foreground="White"
                        FontFamily="Consolas"
                        FontSize="14"
@@ -23,6 +23,6 @@
 		<Button Content="Zamknij"
                 Width="100"
                 HorizontalAlignment="Right"
-                Click="Close_Click"/>
+                Click="Close_Click" Background="#8B0000" Foreground="White" FontSize="16" FontWeight="Bold" BorderBrush="Gold" BorderThickness="2" CornerRadius="8"/>
 	</StackPanel>
 </Window>

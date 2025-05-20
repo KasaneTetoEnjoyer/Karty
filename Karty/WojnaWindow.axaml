@@ -16,7 +16,7 @@
 		<Image Name="PlayerCardImage" Width="100" Height="130"/>
 		<Image Name="ComputerCardImage" Width="100" Height="130"/>
 
-		<Button Content="Rozegraj turę" Click="PlayTurn_Click" Width="150" Background="#8B0000" Foreground="White" FontSize="16" FontWeight="Bold" BorderBrush="Gold" BorderThickness="2" CornerRadius="8"/>
+		<Button Name="Graj" Content="Rozegraj turę" Click="PlayTurn_Click" Width="150" Background="#8B0000" Foreground="White" FontSize="16" FontWeight="Bold" BorderBrush="Gold" BorderThickness="2" CornerRadius="8"/>
 	</StackPanel>
 	</Border>
 </Window>

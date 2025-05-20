@@ -3,6 +3,8 @@ using Avalonia.Media.Imaging;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Numerics;
+using static Karty.Historia;
 
 namespace Karty
 {
@@ -44,11 +46,7 @@ namespace Karty
 
         private void MakeGuess(bool guessHigher)
         {
-            if (deck.Count == 0)
-            {
-                ShowMessage("Koniec gry!");
-                return;
-            }
+
 
             var nextCard = deck[0];
             deck.RemoveAt(0);
@@ -66,7 +64,10 @@ namespace Karty
 
             if (deck.Count == 0)
             {
-                ShowMessage("Koniec talii! Twój wynik: " + score);
+                var player = AppState.ActivePlayerLogin ?? "Nieznany";
+                ShowMessage($"{player} Koniec talii! Twój wynik: " + score);
+                ScoreHistory.AddScore(player, score.ToString(), "HighorLow");
+
             }
         }
 

@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using static Karty.Historia;
 
 namespace Karty;
 
@@ -121,7 +122,9 @@ public partial class MemoryWindow : Window
 
             if (matchesFound == 8)
             {
-                ResultText.Text = $"Wygrales, ruchy: {moves}";
+                var player = AppState.ActivePlayerLogin ?? "Nieznany";
+                ResultText.Text = $"{player} wygrał! Ruchy: {moves}";
+                ScoreHistory.AddScore(player, moves.ToString(), "Memory");
             }
         }
         else
