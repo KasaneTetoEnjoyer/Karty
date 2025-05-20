@@ -5,5 +5,24 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Karty.Historia"
         Title="Historia">
-  Welcome to Avalonia!
+	<StackPanel Margin="20" Spacing="10">
+
+		<TextBlock Text="Tabela wyników:"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Foreground="White"/>
+
+		<ScrollViewer Height="300">
+			<TextBlock x:Name="ScoreTextBlock"
+                       Foreground="White"
+                       FontFamily="Consolas"
+                       FontSize="14"
+                       TextWrapping="Wrap"/>
+		</ScrollViewer>
+
+		<Button Content="Zamknij"
+                Width="100"
+                HorizontalAlignment="Right"
+                Click="Close_Click"/>
+	</StackPanel>
 </Window>

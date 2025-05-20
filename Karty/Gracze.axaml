@@ -4,6 +4,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Karty.Gracze"
-        Title="Gracze">
-  Welcome to Avalonia!
+        Title="Gracze" Background="DarkGreen">
+
+	<StackPanel Margin="20" Spacing="10">
+		<TextBlock Text="Lista graczy:" FontWeight="Bold"/>
+
+		<ListBox x:Name="PlayerListBox" Height="200"/>
+
+		<Button Content="Ustaw jako aktywnego gracza"
+                Click="SetActivePlayer_Click"
+                HorizontalAlignment="Left"
+                Width="200"/>
+
+		<StackPanel Orientation="Horizontal" Spacing="10">
+			<TextBox x:Name="LoginTextBox" Width="200" Watermark="Login nowego gracza"/>
+			<Button Content="Dodaj" Width="100" Click="AddPlayer_Click"/>
+		</StackPanel>
+
+		<Button Content="Zamknij" Click="Close_Click" HorizontalAlignment="Right"/>
+	</StackPanel>
 </Window>
