@@ -24,6 +24,16 @@ public partial class MainWindow : Window
 
     private void Makao_Click(object? sender, RoutedEventArgs e)
     {
-        //new MakaoWindow().Show();
+        new MemoryWindow().Show();
+    }
+    private void Gracze_Click(object? sender, RoutedEventArgs e)
+    {
+        new HighorLow().Show();
+
+    }
+    private void Historia_Click(object? sender, RoutedEventArgs e)
+    {
+        new HighorLow().Show();
+
     }
 }

@@ -147,6 +147,7 @@ public partial class MemoryWindow : Window
         var imagePath = Path.Combine(cardFolder, fileName);
         if (File.Exists(imagePath))
             return new Bitmap(imagePath);
+        return null;
 
     }
 

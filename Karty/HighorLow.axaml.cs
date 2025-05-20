@@ -21,8 +21,6 @@ namespace Karty
 
             HigherButton.Click += (_, _) => MakeGuess(true);
             LowerButton.Click += (_, _) => MakeGuess(false);
-
-            // Start gry po za³adowaniu UI (po otwarciu okna)
             this.Opened += (_, _) => StartGame();
         }
 
@@ -110,7 +108,7 @@ namespace Karty
             var deck = new List<PlayingCard>();
             foreach (var suit in suits)
             {
-                for (int value = 2; value <= 14; value++) // 11–14 = JQKA
+                for (int value = 2; value <= 14; value++)
                 {
                     deck.Add(new PlayingCard { Suit = suit, Value = value });
                 }
