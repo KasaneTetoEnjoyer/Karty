@@ -28,12 +28,12 @@ public partial class MainWindow : Window
     }
     private void Gracze_Click(object? sender, RoutedEventArgs e)
     {
-        new HighorLow().Show();
+        new Gracze().Show();
 
     }
     private void Historia_Click(object? sender, RoutedEventArgs e)
     {
-        new HighorLow().Show();
+        new Historia().Show();
 
     }
 }
